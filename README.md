@@ -41,8 +41,9 @@
     
     直接把一個實例對象綁定到他的 class 對象
     用於對象自身沒有依賴，如果用來創建複雜的對象可能降低應用啟動速度，可使用 @Provides 代替
-    
-    `bind(String.class).annotatedWith(Names.named("JDBC URL")).toInstance("jdbc:mysql://localhost/pizza");`
+```    
+    bind(String.class).annotatedWith(Names.named("JDBC URL")).toInstance("jdbc:mysql://localhost/pizza");
+```
 3. Provider Bingdings
 
 
